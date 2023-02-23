@@ -34,7 +34,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
-import { IConfig } from 'ngx-mask'
+import { ToastrModule } from 'ngx-toastr';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -72,7 +73,14 @@ import { IConfig } from 'ngx-mask'
     MatCardModule,
     NgxMaskDirective,
     NgxMaskPipe,
-
+    CommonModule,
+    ToastrModule.forRoot(
+      {
+        timeOut: 5000,
+        closeButton: true,
+        progressBar: true
+      }
+    ),
   ],
   providers: [provideNgxMask()],
   bootstrap: [AppComponent]
