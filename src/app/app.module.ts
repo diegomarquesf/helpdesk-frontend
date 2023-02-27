@@ -36,6 +36,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { ToastrModule } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
-    TecnicoCreateComponent
+    TecnicoCreateComponent,
+    TecnicoUpdateComponent
   ],
   imports: [
     BrowserModule,
