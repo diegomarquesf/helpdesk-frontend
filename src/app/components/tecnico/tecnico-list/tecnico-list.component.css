@@ -21,3 +21,10 @@ table {
     margin-bottom: 2rem;
   }
   
+  .edit {
+    color: rgb(109, 179, 237)
+  }
+
+  .delete{
+    color: rgb(223, 65, 65);
+  }
