@@ -58,11 +58,11 @@
 
     <form class="form">
         <mat-form-field class="full-width descricao" appearance="outline">
-          <mat-label>Descrição</mat-label>
+          <mat-label>Observações</mat-label>
           <textarea
-             [(ngModel)]="chamado.observacoes" name="descricao"
+             [(ngModel)]="chamado.observacoes" name="observacoes"
              [formControl]="observacoes" required 
-           class="descricao" matInput placeholder="Escreva a Descrição"></textarea>
+           class="observacoes" matInput placeholder="Escreva a Observações"></textarea>
         </mat-form-field>
     </form>
 
