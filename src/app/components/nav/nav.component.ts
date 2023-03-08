@@ -3,7 +3,7 @@ import { OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-nav',
+  selector: 'app-nav', 
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
@@ -14,6 +14,6 @@ export class NavComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    this.router.navigate(['/chamados/read/1'])
+    this.router.navigate(['/home'])
   }
 }
